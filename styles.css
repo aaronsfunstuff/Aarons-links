@@ -105,7 +105,7 @@ body{
     border: 1px solid #697565;
     background-color: #83917e;
 }
-#newTabButton{
+.load-button{
     margin-top:10px;
     padding:10px 20px ; 
     font-size: 1em;

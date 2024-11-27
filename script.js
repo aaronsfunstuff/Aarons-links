@@ -33,10 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
                                 min-height: 100vh;
                             }
                             iframe {
-                                width: 90%;
-                                height: 90%;
+                                width: 100%;
+                                height: 100%;
                                 border: none;
-                                border-radius: 5px;
                             }
                         </style>
                     </head>
