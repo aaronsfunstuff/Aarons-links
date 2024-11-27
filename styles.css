@@ -27,11 +27,13 @@ body{
     padding:20px;
     box-sizing: border-box;
     font: size 1.2em;
-    border-radius: 0 5px 5px 0;
+    border-radius: 15px;
     position: fixed;
     left:0;
     top:0;
     transform: none;
+    border: 10px solid #3C3D37;
+    
     transition:transform 0.3s ease;
 }
 .Side-bar.open{
@@ -94,4 +96,22 @@ body{
         margin-left: 0;
         width: 100%;
     }
+}
+#urlInput{
+    width:80%;
+    padding:10px; 
+    font-size: 1em; 
+    border-radius:5px;
+    border: 1px solid #697565;
+    background-color: #83917e;
+}
+#loadButton{
+    margin-top:10px;
+    padding:10px 20px ; 
+    font-size: 1em;
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
 }
