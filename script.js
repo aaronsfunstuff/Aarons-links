@@ -20,24 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
                         <title>${url}</title>
-                        <style>
-                            body {
-                                font-family: "Playfair Display", serif;
-                                color: #ECDFCC;
-                                background-color: #3C3D37;
-                                margin: 0;
-                                padding: 20px;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                min-height: 100vh;
-                            }
-                            iframe {
-                                width: 100%;
-                                height: 100%;
-                                border: none;
-                            }
-                        </style>
                     </head>
                     <body>
                         <iframe src="${url}"></iframe>
