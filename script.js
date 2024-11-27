@@ -9,36 +9,34 @@ document.addEventListener("DOMContentLoaded", () => {
             const newTab = window.open("about:blank", "_blank");
             if (newTab) {
                 newTab.document.write(`
-                     <!DOCTYPE html>
+                    <!DOCTYPE html>
                     <html lang="en">
                     <head>
                         <meta charset="UTF-8">
                         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <title>${url}</title>
+                        <title>Embedded Page</title>
                         <style>
-                            body {
-                                font-family: "Playfair Display", serif;
-                                color: #ECDFCC;
-                                background-color: #3C3D37;
+                            html, body {
                                 margin: 0;
                                 padding: 0;
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                height: 100vh;
+                                width: 100%;
+                                height: 100%;
+                                overflow: hidden;
                             }
                             iframe {
                                 width: 100%;
                                 height: 100%;
-                                border: none; /* No border for fullscreen effect */
+                                border: none;
+                                display: block;
                             }
                         </style>
                     </head>
                     <body>
-                        <iframe src="${url}" title="Embedded Page"></iframe>
+                        <iframe src="${url}" allowfullscreen></iframe>
                     </body>
                     </html>
                 `);
+                newTab.document.close(); 
             } else {
                 alert("Unable to open a new tab. Please disable popup blockers.");
             }
